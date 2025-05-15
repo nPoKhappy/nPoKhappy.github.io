@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+  {% seo %}
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/">{{ site.title }}</a>
+      </div>
+      <ul>
+        <li><a href="/">首頁</a></li>
+        <li><a href="/about.html">關於</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      {{ content }}
+      <aside>
+        <h3>關於我</h3>
+        <p>簡單介紹自己...</p>
+        <h3>分類</h3>
+        <ul>
+          <li><a href="#">技術</a></li>
+          <li><a href="#">生活</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
